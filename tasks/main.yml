@@ -17,4 +17,4 @@
     src: "{{ src_mnt }}"
     fstype: nfs
     opts: ro
-    state: present
+    state: mounted
