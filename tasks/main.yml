@@ -7,7 +7,7 @@
     state: present
 
 - name: ansible create directory example
-    file:
+  file:
       path: "{{ path_to_mnt }}"
       state: directory
 
