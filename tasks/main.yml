@@ -1,0 +1,20 @@
+---
+
+- name: Ensure NFS utilities are installed.
+  apt:
+    name:
+      - nfs-common
+    state: present
+
+- name: ansible create directory example
+    file:
+      path: "{{ path_to_mnt }}"
+      state: directory
+
+- name: Mount path read-only
+  mount:
+    path: "{{ path_to_mnt }}"
+    src: "{{ src_mnt }}"
+    fstype: nfs
+    opts: ro
+    state: present
