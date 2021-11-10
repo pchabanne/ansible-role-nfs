@@ -16,5 +16,5 @@
     path: "{{ path_to_mnt }}"
     src: "{{ src_mnt }}"
     fstype: nfs
-    opts: ro
+    opts: rw
     state: mounted
